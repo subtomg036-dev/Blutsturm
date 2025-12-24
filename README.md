@@ -8,22 +8,22 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #111;
-            color: #fff;
+            background: #001a66; /* ლურჯი background */
+            color: #ffffff;
         }
         header {
             text-align: center;
             padding: 60px 20px;
-            background: #220000;
+            background: #003399;
         }
         header h1 {
             font-size: 60px;
             margin: 0;
-            color: #ff4d4d;
+            color: #66ccff;
         }
         header p {
             font-size: 18px;
-            opacity: 0.8;
+            opacity: 0.85;
             margin-top: 10px;
         }
         section {
@@ -33,7 +33,7 @@
         }
         h2 {
             font-size: 28px;
-            color: #ff4d4d;
+            color: #66ccff;
             margin-bottom: 20px;
         }
         .members {
@@ -42,7 +42,7 @@
             gap: 20px;
         }
         .member {
-            background: #222;
+            background: #002266;
             padding: 15px;
             text-align: center;
             border-radius: 6px;
@@ -60,9 +60,9 @@
             opacity: 0.9;
         }
         .about {
-            background: #222;
+            background: #002266;
             padding: 20px;
-            border-left: 4px solid #ff4d4d;
+            border-left: 4px solid #66ccff;
             margin-bottom: 30px;
         }
         .socials {
@@ -72,24 +72,24 @@
             margin-top: 20px;
         }
         .socials a {
-            color: #fff;
+            color: #ffffff;
             text-decoration: none;
             font-size: 16px;
-            border: 1px solid #ff4d4d;
+            border: 1px solid #66ccff;
             padding: 8px 15px;
             border-radius: 5px;
             transition: background 0.2s;
         }
         .socials a:hover {
-            background: #ff4d4d;
+            background: #66ccff;
             color: #000;
         }
         footer {
             text-align: center;
             padding: 15px;
-            background: #220000;
+            background: #003399;
             font-size: 14px;
-            opacity: 0.8;
+            opacity: 0.85;
         }
     </style>
 </head>
@@ -135,4 +135,22 @@
         <div class="member">
             <h3>ნიკა მაღლაკელიძე 🎸</h3>
             <span>გიტარა</span>
-        <
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>სოციალური ქსელები</h2>
+    <div class="socials">
+        <a href="#">YouTube</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+    </div>
+</section>
+
+<footer>
+    © 2025 BlutSturm | All Rights Reserved
+</footer>
+
+</body>
+</html>

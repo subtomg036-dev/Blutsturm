@@ -1,156 +1,99 @@
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlutSturm | Metal Band</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #001a66; /* ლურჯი background */
-            color: #ffffff;
-        }
-        header {
-            text-align: center;
-            padding: 60px 20px;
-            background: #003399;
-        }
-        header h1 {
-            font-size: 60px;
-            margin: 0;
-            color: #66ccff;
-        }
-        header p {
-            font-size: 18px;
-            opacity: 0.85;
-            margin-top: 10px;
-        }
-        section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            font-size: 28px;
-            color: #66ccff;
-            margin-bottom: 20px;
-        }
-        .members {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .member {
-            background: #002266;
-            padding: 15px;
-            text-align: center;
-            border-radius: 6px;
-            transition: transform 0.2s;
-        }
-        .member:hover {
-            transform: translateY(-3px);
-        }
-        .member h3 {
-            margin: 5px 0;
-            font-size: 20px;
-        }
-        .member span {
-            font-size: 16px;
-            opacity: 0.9;
-        }
-        .about {
-            background: #002266;
-            padding: 20px;
-            border-left: 4px solid #66ccff;
-            margin-bottom: 30px;
-        }
-        .socials {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .socials a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 16px;
-            border: 1px solid #66ccff;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background 0.2s;
-        }
-        .socials a:hover {
-            background: #66ccff;
-            color: #000;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #003399;
-            font-size: 14px;
-            opacity: 0.85;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlutSturm - მეტალ ჯგუფი</title>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+<style>
+    /* დინამიური gradient ფონური ეფექტი */
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+
+        /* Gradient background */
+        background: linear-gradient(90deg, #00bfff, #001f4d);
+        background-size: 200% 200%;
+        animation: gradientShift 15s ease infinite;
+
+        color: #ffffff;
+    }
+
+    h1 {
+        font-family: 'Metal Mania', cursive;
+        font-size: 6em;
+        margin-bottom: 20px;
+        color: #00ffff;
+        text-shadow: 2px 2px 4px #000000, 0 0 20px #00ffff;
+    }
+
+    .members {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 1.5em;
+        margin-bottom: 40px;
+    }
+
+    .member {
+        background: rgba(0,0,0,0.3);
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: 350px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .member:hover {
+        transform: scale(1.05);
+        background: rgba(0,0,0,0.6);
+    }
+
+    .socials {
+        display: flex;
+        gap: 20px;
+        font-size: 1.8em;
+    }
+
+    .socials a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .socials a:hover {
+        transform: scale(1.2);
+        color: #ffcc00;
+    }
+</style>
 </head>
 <body>
-
-<header>
-    <h1>BlutSturm</h1>
-    <p>ქართული მეტალ ჯგუფი</p>
-</header>
-
-<section>
-    <h2>ჩვენს შესახებ</h2>
-    <div class="about">
-        BlutSturm არის ქართული მეტალ ჯგუფი, რომელიც აერთიანებს მძიმე რიფებს,
-        ენერგიას და ბნელ ატმოსფეროს. ჩვენი მუსიკა არის სიბნელის,
-        ძალის და თავისუფლების გამოხატულება.
-    </div>
-</section>
-
-<section>
-    <h2>ჯგუფის წევრები</h2>
+    <h1>BlutSturm 🤘🔥</h1>
     <div class="members">
-        <div class="member">
-            <h3>გიორგი წიქარიშვილი 🎤</h3>
-            <span>ვოკალი</span>
-        </div>
-        <div class="member">
-            <h3>საბა კაპანაძე 🎹</h3>
-            <span>სინთეზატორი</span>
-        </div>
-        <div class="member">
-            <h3>გოჩა მეყანწიშვილი 🥁</h3>
-            <span>დრამერი</span>
-        </div>
-        <div class="member">
-            <h3>გიორგი ფერაძე 🎸</h3>
-            <span>ბასი</span>
-        </div>
-        <div class="member">
-            <h3>ნიკა ნეკერაშვილი 🎸</h3>
-            <span>გიტარა</span>
-        </div>
-        <div class="member">
-            <h3>ნიკა მაღლაკელიძე 🎸</h3>
-            <span>გიტარა</span>
-        </div>
+        <div class="member">🎤 გიორგი წიქარიშვილი - ვოკალი</div>
+        <div class="member">🎹 საბა კაპანაძე - სინთეზატორი</div>
+        <div class="member">🥁 გოჩა მეყანწიშვილი - დრამერი</div>
+        <div class="member">🎸 გიორგი ფერაძე - გიტარა</div>
+        <div class="member">🎸 ნიკა ნეკერაშვილი - გიტარა</div>
+        <div class="member">🎸 ნიკა მაღლაკელიძე - გიტარა</div>
     </div>
-</section>
 
-<section>
-    <h2>სოციალური ქსელები</h2>
     <div class="socials">
-        <a href="#">YouTube</a>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
+        <a href="https://www.tiktok.com" target="_blank">🎵 TikTok</a>
+        <a href="https://www.youtube.com" target="_blank">📺 YouTube</a>
+        <a href="https://www.instagram.com" target="_blank">📸 Instagram</a>
+        <a href="https://www.twitter.com" target="_blank">🐦 Twitter</a>
     </div>
-</section>
-
-<footer>
-    © 2025 BlutSturm | All Rights Reserved
-</footer>
-
 </body>
 </html>
